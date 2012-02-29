@@ -57,7 +57,7 @@ module Node
 
     def next_worker_index
       @worker_index += 1
-      @worker_index = 0 if @worker_index > @workers.size
+      @worker_index = 0 if @worker_index >= @workers.size
       @worker_index
     end
   end
